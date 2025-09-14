@@ -1,0 +1,39 @@
+.cube3d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in-out;
+}
+
+.face3d {
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    border: 1px solid black;
+    transition: transform 0.5s ease-in-out;
+}
+
+.front3d {
+    transform: rotateY(0deg) translateZ(6rem);
+}
+
+.back3d {
+    transform: rotateY(180deg) translateZ(6rem);
+}
+
+.left3d {
+    transform: rotateY(-90deg) translateZ(6rem);
+}
+
+.right3d {
+    transform: rotateY(90deg) translateZ(6rem);
+}
+
+.top3d {
+    transform: rotateX(90deg) translateZ(6rem);
+}
+
+.bottom3d {
+    transform: rotateX(-90deg) translateZ(6rem);
+}
